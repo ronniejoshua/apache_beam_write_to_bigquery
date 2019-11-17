@@ -53,7 +53,6 @@ class DataExtractor(object):
                 )
 
     def run_multiple(self, gcp_job_name, gcp_gs_staging_location, gcp_gs_temp_location, ads_tables_upload):
-
         pipeline_options = PipelineOptions()
         google_cloud_options = pipeline_options.view_as(GoogleCloudOptions)
         google_cloud_options.project = self.gcp_project_id
